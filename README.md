@@ -38,9 +38,8 @@ prabal-portfolio/
 │   │   └── styles.css
 │   ├── js/
 │   │   └── script.js
-│   ├── images/
-│   │   └── profile.png
-│   └── screenshots/
+│   └─ images/
+│      └── profile.png
 ├── CNAME
 ├── index.html
 ├── README.md
