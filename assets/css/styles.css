@@ -1480,16 +1480,19 @@ body.terminal-open .terminal-portfolio {
     flex-direction: column;
   }
 
-  .boot-lines p {
-    white-space: normal;
-    width: auto;
-    animation: bootFade 360ms ease forwards;
-    opacity: 0;
-  }
+  .boot-lines {
+  gap: 9px;
+}
 
-  @keyframes bootFade {
-    to { opacity: 1; }
-  }
+.boot-lines p {
+  font-size: clamp(0.62rem, 2.55vw, 0.86rem);
+  line-height: 1.7;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+  width: 0;
+  animation: bootType 640ms steps(54, end) forwards;
+  animation-delay: var(--delay);
+}
 
   .terminal-shell {
     height: 88vh;
