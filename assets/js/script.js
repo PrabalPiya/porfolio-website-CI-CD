@@ -7,7 +7,6 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
     const isOpen = document.body.classList.toggle('nav-open');
@@ -117,7 +116,6 @@ if ('IntersectionObserver' in window && sections.length && navItems.length) {
   sections.forEach((section) => sectionObserver.observe(section));
 }
 
-
 // Splash screen
 const splashScreen = document.querySelector('[data-splash-screen]');
 
@@ -126,12 +124,12 @@ const hideSplash = () => {
   splashScreen.classList.add('splash-hidden');
   window.setTimeout(() => {
     splashScreen.setAttribute('aria-hidden', 'true');
-  }, 720);
+  }, 560);
 };
 
 if (splashScreen) {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const splashDelay = prefersReducedMotion ? 900 : 4700;
+  const splashDelay = prefersReducedMotion ? 900 : 6860;
   window.setTimeout(hideSplash, splashDelay);
 }
 
@@ -149,6 +147,9 @@ const terminalState = {
   history: [],
   historyIndex: -1,
 };
+
+const RESUME_PAGE = 'resume.html';
+const RESUME_FILE = 'assets/files/Prabal_Piya_Resume.pdf';
 
 const projects = [
   {
@@ -220,6 +221,7 @@ const renderLs = () => `
     <div class="terminal-table-row"><span>-rw-r--r--</span><span>1.1K</span><span>Jun 2026</span><strong>about.txt</strong></div>
     <div class="terminal-table-row"><span>-rw-r--r--</span><span>1.4K</span><span>Jun 2026</span><strong>skills.txt</strong></div>
     <div class="terminal-table-row"><span>-rw-r--r--</span><span>0.8K</span><span>Jun 2026</span><strong>contact.txt</strong></div>
+    <div class="terminal-table-row"><span>-rw-r--r--</span><span>1.0K</span><span>Jun 2026</span><strong>resume.txt</strong></div>
   </div>
 `;
 
@@ -244,11 +246,48 @@ const renderProjectDetail = (id) => {
 };
 
 const commandMap = {
-  help: () => `Available commands:\n\n  help                  show this help menu\n  whoami                print profile summary\n  man prabal            open portfolio manual page\n  pwd                   print current directory\n  ls                    list portfolio files\n  ls projects           list project directories\n  projects              list project directories\n  cat about.txt         read about file\n  cat skills.txt        read skills file\n  cat contact.txt       read contact file\n  cat projects/00       read AWS EKS project\n  cat projects/01       read Kubernetes Minikube project\n  cat projects/02       read Docker Compose project\n  cat projects/03       read Dockerized web app project\n  open github           open GitHub profile\n  open linkedin         open LinkedIn profile\n  date                  show local browser date\n  history               show typed commands\n  clear                 clear terminal\n  exit                  close terminal`,
+  help: () => `Available commands:
 
-  whoami: () => `Prabal Piya\nAspiring DevOps Engineer from Nepal.\nLearning DevOps through small practical projects: Docker, Kubernetes, CI/CD, cloud infrastructure, monitoring, and documentation.`,
+  help                  show this help menu
+  whoami                print profile summary
+  man prabal            open portfolio manual page
+  pwd                   print current directory
+  ls                    list portfolio files
+  ls projects           list project directories
+  cat about.txt         read about file
+  cat skills.txt        read skills file
+  cat contact.txt       read contact file
+  cat resume.txt        show resume links
+  cat projects/00       read AWS EKS project
+  cat projects/01       read Kubernetes Minikube project
+  cat projects/02       read Docker Compose project
+  cat projects/03       read Dockerized web app project
+  date                  show local browser date
+  clear                 clear terminal
+  exit                  close terminal`,
 
-  'man prabal': () => `PRABAL(1)                         Portfolio Manual                         PRABAL(1)\n\nNAME\n    Prabal Piya - aspiring DevOps engineer\n\nSYNOPSIS\n    build locally -> containerize -> deploy -> check logs -> document what worked\n\nDESCRIPTION\n    Focused on understanding how applications move from code to running environments.\n    Current practice includes Docker, Kubernetes, Terraform, CI/CD, cloud basics, and monitoring tools.\n\nFILES\n    about.txt       personal summary\n    skills.txt      current tools and learning areas\n    contact.txt     contact links\n    projects/       project notes and repositories`,
+  whoami: () => `Prabal Piya
+Aspiring DevOps Engineer from Nepal.
+Learning DevOps through small practical projects: Docker, Kubernetes, CI/CD, cloud infrastructure, monitoring, and documentation.`,
+
+  'man prabal': () => `PRABAL(1)                         Portfolio Manual                         PRABAL(1)
+
+NAME
+    Prabal Piya - Aspiring DevOps engineer
+
+SYNOPSIS
+    Build -> Containerize -> Deploy -> Check Logs -> Document what worked
+
+DESCRIPTION
+    Focused on understanding how applications move from code to running environments.
+    Current practice includes Docker, Kubernetes, Terraform, CI/CD, cloud basics, and monitoring tools.
+
+FILES
+    about.txt       personal summary
+    skills.txt      current tools and learning areas
+    contact.txt     contact links
+    resume.txt      resume view and download links
+    projects/       project notes and repositories`,
 
   pwd: () => '/home/prabal/portfolio',
 
@@ -259,32 +298,36 @@ const commandMap = {
   'ls -lh projects': renderProjects,
   projects: renderProjects,
 
-  'cat about.txt': () => `I am building beginner-friendly DevOps projects to understand the real workflow behind deployment.\n\nI try to keep things simple: run locally first, use Docker, move to Compose or Kubernetes, check logs when it breaks, and write down the commands that actually worked.`,
+  'cat about.txt': () => `I am building beginner-friendly DevOps projects to understand the real workflow behind deployment.
 
-  'cat skills.txt': () => `current_stack=(\n  linux basics\n  docker\n  docker-compose\n  kubernetes + minikube\n  terraform\n  aws + azure basics\n  github actions\n  azure devops\n  ansible\n  bash scripting\n  prometheus + grafana basics\n)`,
+I try to keep things simple: run locally first, use Docker, move to Compose or Kubernetes, check logs when it breaks, and write down the commands that actually worked.`,
 
-  'cat contact.txt': () => `email:    <a href="mailto:prabalpiya03@gmail.com">prabalpiya03@gmail.com</a>\ngithub:   <a href="https://github.com/PrabalPiya" target="_blank" rel="noreferrer">github.com/PrabalPiya</a>\nlinkedin: <a href="https://www.linkedin.com/in/prabalpiya/" target="_blank" rel="noreferrer">linkedin.com/in/prabalpiya</a>`,
+  'cat skills.txt': () => `current_stack=(
+  linux basics
+  docker
+  docker-compose
+  kubernetes + minikube
+  terraform
+  aws + azure basics
+  github actions
+  azure devops
+  ansible
+  bash scripting
+  prometheus + grafana basics
+)`,
 
-  contact: () => commandMap['cat contact.txt'](),
+  'cat contact.txt': () => `email:    <a href="mailto:prabalpiya03@gmail.com">prabalpiya03@gmail.com</a>
+github:   <a href="https://github.com/PrabalPiya" target="_blank" rel="noreferrer">github.com/PrabalPiya</a>
+linkedin: <a href="https://www.linkedin.com/in/prabalpiya/" target="_blank" rel="noreferrer">linkedin.com/in/prabalpiya</a>`,
 
-  'cat projects/00': () => renderProjectDetail('00'),
-  'cat projects/01': () => renderProjectDetail('01'),
-  'cat projects/02': () => renderProjectDetail('02'),
-  'cat projects/03': () => renderProjectDetail('03'),
-
-  'open github': () => {
-    window.open('https://github.com/PrabalPiya', '_blank', 'noopener,noreferrer');
-    return 'opening github.com/PrabalPiya ...';
+  'cat resume.txt': () => {
+    window.open(RESUME_PAGE, '_blank', 'noopener,noreferrer');
+    return 'opening resume.txt ...';
   },
 
-  'open linkedin': () => {
-    window.open('https://www.linkedin.com/in/prabalpiya/', '_blank', 'noopener,noreferrer');
-    return 'opening linkedin.com/in/prabalpiya ...';
-  },
 
   date: () => new Date().toString(),
   'uname -a': () => 'PrabalOS portfolio 0.3.1 #devops x86_64 GNU/Linux',
-  history: () => terminalState.history.map((item, index) => `${String(index + 1).padStart(3, ' ')}  ${escapeHtml(item)}`).join('\n') || 'history is empty',
 };
 
 const runTerminalCommand = (rawCommand) => {
@@ -318,7 +361,8 @@ const runTerminalCommand = (rawCommand) => {
     return;
   }
 
-  addTerminalResponse(`${escapeHtml(rawCommand.trim())}: command not found\nType <strong>help</strong> to see available commands.`);
+  addTerminalResponse(`${escapeHtml(rawCommand.trim())}: command not found
+Type <strong>help</strong> to see available commands.`);
 };
 
 const openTerminal = () => {

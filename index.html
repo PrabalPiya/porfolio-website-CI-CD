@@ -8,7 +8,7 @@
   <title>Prabal Piya | DevOps Engineer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -18,21 +18,22 @@
 
   <div class="splash-screen" data-splash-screen aria-label="Portfolio Linux boot sequence">
     <div class="boot-terminal" aria-hidden="true">
-      <div class="boot-topline">
-        <span>PrabalOS 0.3.1 LTS</span>
-        <span>x86_64</span>
-      </div>
-
-      <div class="boot-lines">
-        <p><span class="boot-ok">[ OK ]</span> Reached target Network is Online.</p>
-        <p><span class="boot-ok">[ OK ]</span> Mounted /home/prabal/portfolio.</p>
-        <p><span class="boot-ok">[ OK ]</span> Started docker.service.</p>
-        <p><span class="boot-ok">[ OK ]</span> Started kubernetes-notes.service.</p>
-        <p><span class="boot-ok">[ OK ]</span> Started terraform-state-check.service.</p>
-        <p><span class="boot-ok">[ OK ]</span> Started portfolio-interface.service.</p>
-        <p class="boot-login">prabal-portfolio login: <span>visitor</span></p>
-        <p class="boot-command"><span>visitor@prabal:~$</span> startx portfolio</p>
-        <p class="boot-ready">Launching portfolio workspace<span class="boot-cursor"></span></p>
+      <div class="boot-window">
+        <div class="boot-lines">
+          <p>BIOS v2.4.1 — Initializing hardware...</p>
+          <p>CPU: 8-core @ 3.6GHz ✓</p>
+          <p>RAM: 32GB DDR5 ✓</p>
+          <p>Loading kernel modules...</p>
+          <p>Mounting filesystems...</p>
+          <p><span class="boot-ok">[ OK ]</span> <span class="boot-success">Started systemd-journald.service</span></p>
+          <p><span class="boot-ok">[ OK ]</span> <span class="boot-success">Reached target Graphical Interface</span></p>
+          <p class="boot-starting">Starting portfolio.service...</p>
+          <p><span class="boot-ok">[ OK ]</span> <span class="boot-success">portfolio.service — Active (running)</span></p>
+          <p class="boot-ready">Ready.</p>
+        </div>
+        <div class="boot-typing-line">
+          <span class="boot-prompt"><span class="boot-cursor"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -85,7 +86,7 @@
           <h1>PRABAL PIYA</h1>
 
           <div class="status-line">
-            <span>🟢 Open to opportunities</span>
+            <span class="open">🟢 Open to opportunities</span>
             <span>Nepal</span>
           </div>
 
@@ -98,9 +99,9 @@
           <div class="hero-actions">
             <a class="text-link magnetic" href="https://github.com/PrabalPiya" target="_blank" rel="noreferrer">GitHub</a>
             <a class="text-link magnetic" href="https://www.linkedin.com/in/prabalpiya/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="text-link magnetic" href="" target="_blank" rel="noreferrer">Resume Updating...</a>
-            
-            </button>
+            <a class="text-link magnetic" href="resume.html" target="_blank" rel="noreferrer">
+              View Resume
+            </a>
           </div>
         </div>
       </div>
@@ -239,7 +240,7 @@
                 <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Actions</span><span>GitHub Pages</span><span>Custom domain</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/PrabalPiya/porfolio-website-CI-CD.git" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a href="https://github.com/PrabalPiya/prabal-portfolio" target="_blank" rel="noreferrer">GitHub Repo</a>
               </div>
             </div>
           </details>
@@ -325,7 +326,7 @@
         <div class="section-title reveal">
           <p class="terminal-line">$ ping -c 4 prabalpiya.com.np</p>
           <h2>Reach out</h2>
-          <p>Open to learning opportunities and feedbacks.</p>
+          <p>Open to learning opportunities and project feedback.</p>
         </div>
 
         <div class="contact-rows reveal" aria-label="Contact links">
@@ -400,7 +401,7 @@
         <div class="terminal-output-area" data-terminal-output aria-live="polite">
           <div class="terminal-entry terminal-muted">PrabalOS Portfolio Terminal [Version 0.3.1]</div>
           <div class="terminal-entry terminal-muted">Type <strong>help</strong> to see available commands.</div>
-          <div class="terminal-entry terminal-muted">Useful commands: <strong>whoami</strong>, <strong>man prabal</strong>, <strong>ls</strong>, <strong>cat skills.txt</strong>, <strong>projects</strong>, <strong>contact</strong>, <strong>clear</strong>, <strong>exit</strong></div>
+          <div class="terminal-entry terminal-muted">Useful commands: <strong>whoami</strong>, <strong>man prabal</strong>, <strong>ls</strong>, <strong>cat skills.txt</strong>, <strong>ls projects</strong>, <strong>cat resume.txt</strong>, <strong>cat contact.txt</strong>, <strong>clear</strong>, <strong>exit</strong></div>
         </div>
 
         <form class="terminal-input-row" data-terminal-form autocomplete="off">
@@ -416,6 +417,7 @@
       <p>$ echo "Built to learn, improved to last."</p>
     </div>
   </footer>
+
   <script src="assets/js/script.js"></script>
 </body>
 </html>
