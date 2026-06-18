@@ -1,4 +1,4 @@
-# Prabal Piya Portfolio
+# Personal Portfolio Website Infrastructure
 
 This is my personal DevOps portfolio website. It is built as a simple static website so the focus stays on clarity, projects, and documentation rather than unnecessary framework complexity.
 
