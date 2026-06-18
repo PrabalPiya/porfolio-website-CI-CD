@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prabal Piya - aspiring DevOps engineer focused on cloud, containers, CI/CD, infrastructure, automation, and monitoring." />
+  <meta name="author" content="Prabal Piya" />
+  <title>Prabal Piya | DevOps Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="cursor-light" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+
+  <div class="splash-screen" data-splash-screen aria-label="Portfolio Linux boot sequence">
+    <div class="boot-terminal" aria-hidden="true">
+      <div class="boot-topline">
+        <span>PrabalOS 0.3.1 LTS</span>
+        <span>x86_64</span>
+      </div>
+
+      <div class="boot-lines">
+        <p><span class="boot-ok">[ OK ]</span> Reached target Network is Online.</p>
+        <p><span class="boot-ok">[ OK ]</span> Mounted /home/prabal/portfolio.</p>
+        <p><span class="boot-ok">[ OK ]</span> Started docker.service.</p>
+        <p><span class="boot-ok">[ OK ]</span> Started kubernetes-notes.service.</p>
+        <p><span class="boot-ok">[ OK ]</span> Started terraform-state-check.service.</p>
+        <p><span class="boot-ok">[ OK ]</span> Started portfolio-interface.service.</p>
+        <p class="boot-login">prabal-portfolio login: <span>visitor</span></p>
+        <p class="boot-command"><span>visitor@prabal:~$</span> startx portfolio</p>
+        <p class="boot-ready">Launching portfolio workspace<span class="boot-cursor"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#about" aria-label="Prabal Piya home">
+        <span class="brand-path">/home/prabal</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#thinking">Learning</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="mode-dock" aria-label="Open terminal portfolio view">
+    <button class="mode-dock-btn" type="button" data-open-terminal aria-label="Open Linux terminal portfolio">
+      <span class="terminal-button-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img"><path d="M4.75 5.75h14.5v12.5H4.75V5.75Z"/><path d="m8 9.25 2.25 2L8 13.25"/><path d="M12 14.25h4"/></svg>
+      </span>
+      <span>Terminal</span>
+    </button>
+  </div>
+
+  <main>
+    <section id="about" class="hero section-pad">
+      <div class="container hero-layout">
+        <div class="hero-left reveal">
+          <p class="terminal-line">$ whoami — Aspiring DevOps Engineer</p>
+          //
+
+          <div class="profile-frame tilt-card">
+            <img src="assets/images/profile.png" alt="Prabal Piya profile placeholder" />
+          </div>
+        </div>
+
+        <div class="hero-copy reveal">
+          <p class="hello">Hi, I'm</p>
+          <h1>PRABAL PIYA</h1>
+
+          <div class="status-line">
+            <span>🟢 Open to opportunities</span>
+            <span>Nepal</span>
+          </div>
+
+          <p class="intro">
+           A DevOps enthusiast learning containers, CI/CD, cloud deployment, and automation through hands-on projects.
+
+
+          </p>
+
+          <div class="hero-actions">
+            <a class="text-link magnetic" href="https://github.com/PrabalPiya" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="text-link magnetic" href="https://www.linkedin.com/in/prabalpiya/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="text-link magnetic" href="" target="_blank" rel="noreferrer">Resume Updating...</a>
+            
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-detail section-pad compact border-top">
+      <div class="container split-layout">
+        <div class="section-title reveal">
+          <p class="terminal-line">$ cat ./focus.txt</p>
+          <h2>Build. Deploy.  Improve.</h2>
+        </div>
+
+        <div class="body-copy reveal">
+          <p>
+            I am building small, practical projects that show how applications move from source code to running environments.
+          </p>
+          <p>Currently focused on:</p>
+          <ul class="focus-list">
+          <li>Docker containerization</li>
+          <li>Kubernetes deployments</li>
+          <li>CI/CD pipelines</li>
+          <li>Cloud infrastructure</li>
+          <li>Monitoring and documentation</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad border-top">
+      <div class="container">
+        <div class="section-title narrow reveal">
+          <p class="terminal-line">$ ls -lh /opt/projects</p>
+          <h2>Things I have built</h2>
+          <p>
+            //
+          </p>
+        </div>
+
+        <div class="project-list reveal">
+          <details class="project-row tilt-card" open>
+            <summary>
+              <span class="project-number">00</span>
+              <span class="project-name">AWS EKS Three-Tier App</span>
+              <span class="project-meta">Deployed, tested, destroyed for cost · EKS Terraform RDS</span>
+              <span class="project-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="project-content">
+              <p>
+                Containerized frontend and backend deployed on AWS EKS with Aurora MySQL, Terraform, ECR,
+                and Kubernetes manifests.
+              </p>
+              <div class="project-tags">
+                <span>EKS</span><span>RDS Aurora</span><span>Terraform</span><span>ECR</span><span>Kubernetes</span><span>Azure DevOps</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PrabalPiya/book-review-app" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+              <p class="cost-note">
+                This project was deployed and tested successfully. The cloud environment was later destroyed to avoid ongoing cloud costs.
+              </p>
+            </div>
+          </details>
+
+          <details class="project-row tilt-card">
+            <summary>
+              <span class="project-number">01</span>
+              <span class="project-name">Kubernetes Local Deployment with Minikube</span>
+              <span class="project-meta">Completed locally · Minikube Kubernetes MySQL</span>
+              <span class="project-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="project-content">
+              <p>
+                Deployed a Node.js application and MySQL database to a local Kubernetes cluster using Minikube.
+              </p>
+              <div class="project-tags">
+                <span>Docker</span><span>Minikube</span><span>Kubernetes</span><span>kubectl</span><span>MySQL</span><span>PVC</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PrabalPiya/kubernetes-local-deployment-with-minikube" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-row tilt-card">
+            <summary>
+              <span class="project-number">02</span>
+              <span class="project-name">Docker Compose Multi-Container App</span>
+              <span class="project-meta">Completed locally · Docker Compose Node.js MySQL</span>
+              <span class="project-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="project-content">
+              <p>
+                Ran a Node.js Express application and MySQL database together using Docker Compose.
+              </p>
+              <div class="project-tags">
+                <span>Docker</span><span>Docker Compose</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Volumes</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PrabalPiya/docker-compose-mutli-container-app" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-row tilt-card">
+            <summary>
+              <span class="project-number">03</span>
+              <span class="project-name">Dockerized Simple Web App</span>
+              <span class="project-meta">Completed locally · Dockerfile container logs</span>
+              <span class="project-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="project-content">
+              <p>
+                Containerized a simple Node.js Express web application and ran it locally as a Docker container.
+              </p>
+              <div class="project-tags">
+                <span>Node.js</span><span>Express.js</span><span>Dockerfile</span><span>Image build</span><span>Port mapping</span><span>Logs</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PrabalPiya/dockerized-simple-web-app" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-row tilt-card">
+            <summary>
+              <span class="project-number">04</span>
+              <span class="project-name">Portfolio Website CI/CD</span>
+              <span class="project-meta">Portfolio project · GitHub Actions GitHub Pages</span>
+              <span class="project-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="project-content">
+              <p>
+                This portfolio is a static website deployed with a simple CI/CD workflow using GitHub Actions and GitHub Pages.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Actions</span><span>GitHub Pages</span><span>Custom domain</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PrabalPiya/prabal-portfolio" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section-pad border-top">
+      <div class="container stack-section">
+        <div class="section-title reveal">
+          <p class="terminal-line">$ skills --level=learning</p>
+          <h2>Tools & Technologies</h2>
+        </div>
+
+        <div class="stack-marquee reveal" aria-label="DevOps tools and technologies">
+          <div class="stack-track">
+            <span>AWS <small>Actively Learning</small></span>
+            <span>Azure <small>Learning</small></span>
+            <span>Docker <small>Actively Learning</small></span>
+            <span>Kubernetes <small>Actively Learning</small></span>
+            <span>Terraform <small>Actively Learning</small></span>
+            <span>GitHub Actions <small>Actively Learning</small></span>
+            <span>Azure DevOps <small>Learning</small></span>
+            <span>Ansible <small>Actively Learning</small></span>
+            <span>Bash Scripting <small>Basics</small></span>
+            <span>Linux <small>Basics</small></span>
+            <span>Argo CD <small>Actively Learning</small></span>
+            <span>Prometheus <small>Actively Learning</small></span>
+            <span>Grafana <small>Actively Learning</small></span>
+            <span>AWS <small>Actively Learning</small></span>
+            <span>Azure <small>Learning</small></span>
+            <span>Docker <small>Actively Learning</small></span>
+            <span>Kubernetes <small>Actively Learning</small></span>
+            <span>Terraform <small>Actively Learning</small></span>
+            <span>GitHub Actions <small>Actively Learning</small></span>
+            <span>Azure DevOps <small>Learning</small></span>
+            <span>Ansible <small>Actively Learning</small></span>
+            <span>Bash Scripting <small>Basics</small></span>
+            <span>Linux <small>Basics</small></span>
+            <span>Argo CD <small>Actively Learning</small></span>
+            <span>Prometheus <small>Actively Learning</small></span>
+            <span>Grafana <small>Actively Learning</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="thinking" class="section-pad border-top thinking-section">
+      <div class="container split-layout learning-layout">
+        <div class="section-title reveal">
+          <p class="terminal-line">$ cat ./learning-notes.txt</p>
+          <h2>Learning notes</h2>
+          <p>Simple things I try to follow while building DevOps projects.</p>
+        </div>
+
+        <div class="learning-notes reveal" aria-label="DevOps learning notes">
+          <div class="learning-note">
+            <span>01</span>
+            <p>Build small projects first.</p>
+          </div>
+          <div class="learning-note">
+            <span>02</span>
+            <p>Run the app locally and understand the basic flow.</p>
+          </div>
+          <div class="learning-note">
+            <span>03</span>
+            <p>Use Docker, Compose, and Kubernetes step by step.</p>
+          </div>
+          <div class="learning-note">
+            <span>04</span>
+            <p>Learn by fixing errors in logs, ports, services, and env variables.</p>
+          </div>
+          <div class="learning-note">
+            <span>05</span>
+            <p>Keep notes of the commands, mistakes, and fixes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad border-top contact-section">
+      <div class="container contact-layout">
+        <div class="section-title reveal">
+          <p class="terminal-line">$ ping -c 4 prabalpiya.com.np</p>
+          <h2>Reach out</h2>
+          <p>Open to learning opportunities and feedbacks.</p>
+        </div>
+
+        <div class="contact-rows reveal" aria-label="Contact links">
+          <a class="contact-row" href="mailto:prabalpiya03@gmail.com">
+            <span class="contact-row-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M4.75 6.75h14.5v10.5H4.75V6.75Z"/><path d="m5.25 7.25 6.75 5.25 6.75-5.25"/></svg>
+            </span>
+            <span class="contact-row-text">
+              <span class="contact-row-title">Email</span>
+              <span class="contact-row-address">prabalpiya03@gmail.com</span>
+            </span>
+            <span class="contact-row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="contact-row" href="https://github.com/PrabalPiya" target="_blank" rel="noreferrer">
+            <span class="contact-row-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M12 2.75a9.25 9.25 0 0 0-2.92 18.03c.46.08.62-.2.62-.44v-1.64c-2.53.55-3.06-1.08-3.06-1.08-.42-1.05-1.02-1.33-1.02-1.33-.83-.57.06-.56.06-.56.92.06 1.41.95 1.41.95.82 1.4 2.15 1 2.67.76.08-.6.32-1 .58-1.23-2.02-.23-4.14-1.01-4.14-4.5 0-.99.35-1.8.94-2.44-.1-.23-.41-1.16.09-2.41 0 0 .77-.25 2.52.93A8.7 8.7 0 0 1 12 5.48c.78 0 1.55.1 2.28.31 1.74-1.18 2.51-.93 2.51-.93.5 1.25.19 2.18.09 2.41.59.64.94 1.45.94 2.44 0 3.5-2.13 4.27-4.16 4.49.33.28.62.83.62 1.68v2.46c0 .24.16.53.63.44A9.25 9.25 0 0 0 12 2.75Z"/></svg>
+            </span>
+            <span class="contact-row-text">
+              <span class="contact-row-title">GitHub</span>
+              <span class="contact-row-address">github.com/PrabalPiya</span>
+            </span>
+            <span class="contact-row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="contact-row" href="https://www.linkedin.com/in/prabalpiya/" target="_blank" rel="noreferrer">
+            <span class="contact-row-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M6.35 9.5v8.75"/><path d="M6.35 5.75v.05"/><path d="M10.35 18.25v-8.7"/><path d="M10.35 13.25c0-2.25 1.25-3.95 3.35-3.95 2 0 3.1 1.35 3.1 3.65v5.3"/><path d="M4.75 3.75h14.5v16.5H4.75V3.75Z"/></svg>
+            </span>
+            <span class="contact-row-text">
+              <span class="contact-row-title">LinkedIn</span>
+              <span class="contact-row-address">linkedin.com/in/prabalpiya</span>
+            </span>
+            <span class="contact-row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="contact-row" href="https://www.instagram.com/pock_youuu/" target="_blank" rel="noreferrer">
+            <span class="contact-row-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-label="Instagram">
+                <rect x="4.5" y="4.5" width="15" height="15" rx="4.2" ry="4.2"></rect>
+                <circle cx="12" cy="12" r="3.4"></circle>
+                <circle cx="16.8" cy="7.2" r="0.7"></circle>
+              </svg>
+            </span>
+            <span class="contact-row-text">
+              <span class="contact-row-title">Instagram</span>
+              <span class="contact-row-address">instagram.com/prabalpiya</span>
+            </span>
+            <span class="contact-row-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <section class="terminal-portfolio" data-terminal-portfolio aria-hidden="true" aria-label="Interactive Linux terminal portfolio view">
+    <div class="terminal-shell" role="dialog" aria-modal="true" aria-labelledby="terminal-title">
+      <div class="terminal-topbar">
+        <div class="terminal-title-left">
+          <span class="terminal-top-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4.75 5.75h14.5v12.5H4.75V5.75Z"/><path d="m8 9.25 2.25 2L8 13.25"/><path d="M12 14.25h4"/></svg>
+          </span>
+          <p id="terminal-title">visitor@prabal:~/portfolio</p>
+        </div>
+
+        <button class="terminal-exit" type="button" data-close-terminal>exit</button>
+      </div>
+
+      <div class="terminal-screen" data-terminal-screen>
+        <div class="terminal-output-area" data-terminal-output aria-live="polite">
+          <div class="terminal-entry terminal-muted">PrabalOS Portfolio Terminal [Version 0.3.1]</div>
+          <div class="terminal-entry terminal-muted">Type <strong>help</strong> to see available commands.</div>
+          <div class="terminal-entry terminal-muted">Useful commands: <strong>whoami</strong>, <strong>man prabal</strong>, <strong>ls</strong>, <strong>cat skills.txt</strong>, <strong>projects</strong>, <strong>contact</strong>, <strong>clear</strong>, <strong>exit</strong></div>
+        </div>
+
+        <form class="terminal-input-row" data-terminal-form autocomplete="off">
+          <label class="terminal-prompt" for="terminal-command-input">visitor@prabal:~/portfolio$</label>
+          <input id="terminal-command-input" data-terminal-input type="text" spellcheck="false" autocomplete="off" aria-label="Type a Linux command" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer border-top">
+    <div class="container footer-inner">
+      <p>$ echo "Built to learn, improved to last."</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
