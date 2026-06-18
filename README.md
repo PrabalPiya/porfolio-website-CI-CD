@@ -94,7 +94,7 @@ This keeps the deployment simple and suitable for a static portfolio website.
 The domain used for this portfolio is:
 
 ```text
-prabalpiya.com.np
+prabalpiya.me
 ```
 
 The repository includes a `CNAME` file for the custom domain. In GitHub, the domain should also be configured from:
