@@ -51,7 +51,7 @@ prabal-portfolio/
 Clone the repository:
 
 ```bash
-git clone https://github.com/PrabalPiya/prabal-portfolio.git
+git clone https://github.com/PrabalPiya/porfolio-website-CI-CD.git
 cd prabal-portfolio
 ```
 

@@ -7,6 +7,7 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
     const isOpen = document.body.classList.toggle('nav-open');
