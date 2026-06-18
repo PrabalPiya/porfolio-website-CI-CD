@@ -2,7 +2,7 @@
 
 This is my personal DevOps portfolio website. It is built as a simple static website so the focus stays on clarity, projects, and documentation rather than unnecessary framework complexity.
 
-Live website: https://prabalpiya.com.np
+Live website: https://prabalpiya.me
 
 ## Purpose
 
@@ -12,7 +12,6 @@ The goal of this portfolio is to show:
 - what DevOps tools I am learning and practicing
 - what projects I have built
 - how my projects are documented
-- how this portfolio is deployed with a simple CI/CD workflow, without making the main website too crowded
 
 I am currently learning DevOps through hands-on projects around Docker, Kubernetes, cloud infrastructure, CI/CD, automation, and monitoring.
 
