@@ -391,8 +391,8 @@ h3 {
 .focus-list {
   list-style: square;
   padding: 30;
-  margin: 20px 0 0;
-  font-size: 0.9rem;
+  margin: 5px 0 0;
+  font-size: 1rem;
 }
 
 .focus-list li {
@@ -476,7 +476,7 @@ h3 {
 
 .section-title.narrow {
   max-width: 820px;
-  margin-bottom: 34px;
+  margin-bottom: 55px;
 }
 
 .body-copy {
@@ -1145,7 +1145,7 @@ summary:focus-visible {
 }
 
 .learning-note span {
-  color: var(--faint);
+  color: var(--text);
   font-family: var(--font-mono);
   font-size: 0.82rem;
 }
@@ -1158,7 +1158,7 @@ summary:focus-visible {
   line-height: 1.55;
 }
 
-.learning-note:first-child p {
+.learning-note p {
   color: var(--text);
 }
 
