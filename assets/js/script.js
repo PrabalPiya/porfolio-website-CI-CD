@@ -268,7 +268,7 @@ const commandMap = {
 
   whoami: () => `Prabal Piya
 Aspiring DevOps Engineer from Nepal.
-Learning DevOps through small practical projects: Docker, Kubernetes, CI/CD, cloud infrastructure, monitoring, and documentation.`,
+Learning DevOps through small practical projects: Docker, Kubernetes, CI/CD, Cloud Infrastructure, Monitoring, and Documentation.`,
 
   'man prabal': () => `PRABAL(1)                         Portfolio Manual                         PRABAL(1)
 
@@ -280,7 +280,7 @@ SYNOPSIS
 
 DESCRIPTION
     Focused on understanding how applications move from code to running environments.
-    Current practice includes Docker, Kubernetes, Terraform, CI/CD, cloud basics, and monitoring tools.
+    Current practice includes Docker, Kubernetes, Terraform, CI/CD, Cloud basics, and Monitoring tools.
 
 FILES
     about.txt       personal summary
