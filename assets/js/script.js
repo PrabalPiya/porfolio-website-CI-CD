@@ -154,35 +154,27 @@ const RESUME_FILE = 'assets/files/Prabal_Piya_Resume.pdf';
 const projects = [
   {
     id: '00',
-    name: 'book-review-app',
+    name: 'AWS EKS Three-Tier App',
     title: 'AWS EKS Three-Tier App',
-    stack: 'EKS Terraform Aurora-MySQL ECR Kubernetes',
+    stack: 'EKS, Terraform, Aurora-MySQL, ECR, Kubernetes',
     url: 'https://github.com/PrabalPiya/book-review-app',
     note: 'Frontend and backend containers deployed on AWS EKS with Aurora MySQL and Terraform infrastructure.',
   },
   {
     id: '01',
-    name: 'kubernetes-local-deployment-with-minikube',
-    title: 'Kubernetes Local Deployment',
-    stack: 'Minikube Kubernetes MySQL PVC Services',
-    url: 'https://github.com/PrabalPiya/kubernetes-local-deployment-with-minikube',
-    note: 'Local Kubernetes practice project with app and database manifests, services, secrets, and persistent storage.',
+    name: 'DevOps GitOps Capstone',
+    title: 'DevOps GitOps Capstone',
+    stack: 'AWS, EKS, Terraform, GitHub Actions, Helm, ArgoCD',
+    url: 'https://github.com/PrabalPiya/simple-taskops-devops-capstone.git',
+    note: 'A cloud-native DevOps capstone project deploying a containerized full-stack application to AWS EKS using Terraform, GitHub Actions, Amazon ECR, Helm, Argo CD, Prometheus, and Grafana.',
   },
   {
     id: '02',
-    name: 'docker-compose-mutli-container-app',
-    title: 'Docker Compose Multi-Container App',
-    stack: 'Docker Compose Node.js MySQL Volumes',
-    url: 'https://github.com/PrabalPiya/docker-compose-mutli-container-app',
-    note: 'Node.js and MySQL running together using Docker Compose to understand service names, env values, and logs.',
-  },
-  {
-    id: '03',
-    name: 'dockerized-simple-web-app',
-    title: 'Dockerized Simple Web App',
-    stack: 'Dockerfile Node.js Ports Logs',
-    url: 'https://github.com/PrabalPiya/dockerized-simple-web-app',
-    note: 'A simple web app containerized with Docker to practice image builds, port mapping, and container logs.',
+    name: 'Portfolio Website CI/CD',
+    title: 'Portfolio Website CI/CD',
+    stack: ' HTML, CSS, JavaScript, GitHub Actions, GitHub Pages',
+    url: 'https://github.com/PrabalPiya/porfolio-website-CI-CD.git',
+    note: 'A personal portfolio website deployed with GitHub Pages and automated using GitHub Actions for a simple CI/CD workflow.',
   },
 ];
 
@@ -258,10 +250,9 @@ const commandMap = {
   cat skills.txt        read skills file
   cat contact.txt       read contact file
   cat resume.txt        show resume links
-  cat projects/00       read AWS EKS project
-  cat projects/01       read Kubernetes Minikube project
-  cat projects/02       read Docker Compose project
-  cat projects/03       read Dockerized web app project
+  cat projects/00       read AWS EKS Three-Tier App
+  cat projects/01       read DevOps GitOps Capstone
+  cat projects/02       read Portfolio Website CI/CD
   date                  show local browser date
   clear                 clear terminal
   exit                  close terminal`,
