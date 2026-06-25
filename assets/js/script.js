@@ -170,6 +170,14 @@ const projects = [
   },
   {
     id: '02',
+    name: 'InvoiceFlow DevOps Infrastructure',
+    title: 'InvoiceFlow DevOps Infrastructure',
+    stack: 'AWS, EC2, Terraform, K3s, GitHub Actions, Helm, ArgoCD, Prometheus, Grafana',
+    url: 'https://github.com/PrabalPiya/invoiceflow-devops-infrastructure.git', 
+    note: 'Cost-optimized AWS EC2 K3s deployment for InvoiceFlow application using Terraform, Helm, ArgoCD, GitHub Actions, Prometheus, and Grafana.',
+  },
+  {
+    id: '03',
     name: 'Portfolio Website CI/CD',
     title: 'Portfolio Website CI/CD',
     stack: ' HTML, CSS, JavaScript, GitHub Actions, GitHub Pages',
@@ -252,7 +260,8 @@ const commandMap = {
   cat resume.txt        show resume links
   cat projects/00       read AWS EKS Three-Tier App
   cat projects/01       read DevOps GitOps Capstone
-  cat projects/02       read Portfolio Website CI/CD
+  cat projects/02       read Invoiceflow DevOps Infrastructure
+  cat projects/03       read Portfolio Website CI/CD
   date                  show local browser date
   clear                 clear terminal
   exit                  close terminal`,
