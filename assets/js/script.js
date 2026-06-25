@@ -260,7 +260,7 @@ const commandMap = {
   cat resume.txt        show resume links
   cat projects/00       read AWS EKS Three-Tier App
   cat projects/01       read DevOps GitOps Capstone
-  cat projects/02       read Invoiceflow DevOps Infrastructure
+  cat projects/02       read InvoiceFlow DevOps Infrastructure
   cat projects/03       read Portfolio Website CI/CD
   date                  show local browser date
   clear                 clear terminal
