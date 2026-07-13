@@ -153,13 +153,13 @@ const RESUME_FILE = 'assets/files/Prabal_Piya_Resume.pdf';
 
 const projects = [
   {
-    id: '00',
-    name: 'AWS EKS Three-Tier App',
-    title: 'AWS EKS Three-Tier App',
-    stack: 'EKS, Terraform, Aurora-MySQL, ECR, Kubernetes',
-    url: 'https://github.com/PrabalPiya/book-review-app',
-    note: 'Frontend and backend containers deployed on AWS EKS with Aurora MySQL and Terraform infrastructure.',
-  },
+  id: '00',
+  name: 'AWS Full-Stack LMS Deployment',
+  title: 'AWS Full-Stack LMS Deployment',
+  stack: 'AWS, S3, CloudFront, EC2, RDS PostgreSQL, Terraform, Docker, GitHub Actions',
+  url: 'https://github.com/PrabalPiya/lms-fullstack-devops-infrastructure.git',
+  note: 'A full-stack Learning Management System deployed on AWS with a React frontend hosted on S3 and CloudFront, a Dockerized Node.js backend running on EC2, and PostgreSQL on Amazon RDS. The infrastructure is provisioned with Terraform, while GitHub Actions and AWS SSM automate frontend and backend deployments.',
+},
   {
     id: '01',
     name: 'DevOps GitOps Capstone',
@@ -258,7 +258,7 @@ const commandMap = {
   cat skills.txt        read skills file
   cat contact.txt       read contact file
   cat resume.txt        show resume links
-  cat projects/00       read AWS EKS Three-Tier App
+  cat projects/00       read AWS Full-Stack LMS Deployment
   cat projects/01       read DevOps GitOps Capstone
   cat projects/02       read InvoiceFlow DevOps Infrastructure
   cat projects/03       read Portfolio Website CI/CD
