@@ -310,6 +310,8 @@ I try to keep things simple: run locally first, use Docker, move to Compose or K
   terraform
   aws + azure basics
   github actions
+  gitlab
+  jenkins
   azure devops
   ansible
   bash scripting
