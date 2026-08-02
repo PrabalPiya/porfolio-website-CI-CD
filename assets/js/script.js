@@ -184,6 +184,14 @@ const projects = [
     url: 'https://github.com/PrabalPiya/porfolio-website-CI-CD.git',
     note: 'A personal portfolio website deployed with GitHub Pages and automated using GitHub Actions for a simple CI/CD workflow.',
   },
+  {
+  id: '04',
+  name: 'Jenkins Three-Tier CI/CD Lab',
+  title: 'Jenkins Three-Tier CI/CD Lab',
+  stack: 'Jenkins, Docker Compose, GitLab, React, Express, PostgreSQL, Nginx',
+  url: 'https://github.com/PrabalPiya/jenkins-three-tier-lab',
+  note: 'A three-tier application where Jenkins checks out the code, builds the Docker images, and deploys the complete application using Docker Compose.',
+},
 ];
 
 const escapeHtml = (value) => String(value)
@@ -236,7 +244,7 @@ const renderProjects = () => `
       </div>
     `).join('')}
   </div>
-  <br />Run <strong>cat projects/00</strong>, <strong>cat projects/01</strong>, <strong>cat projects/02</strong>, or <strong>cat projects/03</strong> for details.
+  <br />Run <strong>cat projects/00</strong>, <strong>cat projects/01</strong>, <strong>cat projects/02</strong>, <strong>cat projects/03</strong>, or <strong>cat projects/04</strong> for details.
 `;
 
 const renderProjectDetail = (id) => {
@@ -262,6 +270,7 @@ const commandMap = {
   cat projects/01       read DevOps GitOps Capstone
   cat projects/02       read InvoiceFlow DevOps Infrastructure
   cat projects/03       read Portfolio Website CI/CD
+  cat projects/04       read Jenkins Three-Tier CI/CD Lab
   date                  show local browser date
   clear                 clear terminal
   exit                  close terminal`,
